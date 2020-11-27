@@ -18,13 +18,13 @@ const state = () => {
       },
       {
         icon: "HardDriveIcon",
-        pageName: "side-menu-file-manager",
+        pageName: "ListPatient",
         title: "Liste des patients"
       },
       {
-        icon: "HardDriveIcon",
-        pageName: "Patientlist",
-        title: "Liste patients"
+        icon: "CreditCardIcon",
+        pageName: "Facture",
+        title: "Facture"
       },
       {
         icon: "BoxIcon",
@@ -52,11 +52,6 @@ const state = () => {
         ]
       },
       {
-        icon: "CreditCardIcon",
-        pageName: "side-menu-point-of-sale",
-        title: "Point of Sale"
-      },
-      {
         icon: "MessageSquareIcon",
         pageName: "side-menu-chat",
         title: "Chat"
@@ -65,6 +60,40 @@ const state = () => {
         icon: "FileTextIcon",
         pageName: "side-menu-post",
         title: "Post"
+      },
+      {
+        icon: "LayoutIcon",
+        pageName: "side-menu-layout",
+        title: "Services",
+        subMenu: [
+          {
+            icon: "",
+            pageName: "Listservice",
+            title: "Liste des services"
+          },
+          {
+            icon: "",
+            pageName: "side-menu-change-password",
+            title: "Ajouter un service"
+          }
+        ]
+      },
+      {
+        icon: "EditIcon",
+        pageName: "side-menu-crud",
+        title: "Forum",
+        subMenu: [
+          {
+            icon: "",
+            pageName: "Article",
+            title: "Créer un article"
+          },
+          {
+            icon: "",
+            pageName: "side-menu-crud-data-list",
+            title: "Data List"
+          }
+        ]
       }
     ]
   };

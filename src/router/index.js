@@ -62,7 +62,10 @@ import ImageZoom from "../views/ImageZoom";
 import Profiledoctor from "../views/Profiledoctor";
 import Registerdoctor from "../views/Registerdoctor";
 import Editpassword from "../views/Editpassword";
-import Patientlist from "../views/Patientlist";
+import ListPatient from "../views/ListPatient";
+import Facture from "../views/Facture";
+import Listservice from "../views/Listservice";
+import Article from "../views/Article";
 
 Vue.use(VueRouter);
 
@@ -93,9 +96,24 @@ const routes = [
         component: Editpassword
       },
       {
-        path: "/patient_list",
-        name: "Patienlist",
-        component: Patientlist
+        path: "/list_patient",
+        name: "ListPatient",
+        component: ListPatient
+      },
+      {
+        path: "/invoice",
+        name: "Facture",
+        component: Facture
+      },
+      {
+        path: "/list_service",
+        name: "Listservice",
+        component: Listservice
+      },
+      {
+        path: "/article",
+        name: "Article",
+        component: Article
       },
       {
         path: "inbox",

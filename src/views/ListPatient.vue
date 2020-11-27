@@ -64,12 +64,13 @@
             <tr>
               <th class="whitespace-no-wrap">IMAGES</th>
               <th class="whitespace-no-wrap">Nom</th>
-              <th class="text-center whitespace-no-wrap">Allergies</th>
-              <th class="text-center whitespace-no-wrap">
+              <th class="whitespace-no-wrap">Prénom</th>
+              <th class="whitespace-no-wrap">Allergies</th>
+              <th class="whitespace-no-wrap">
                 Date de consultations
               </th>
-              <th class="text-center whitespace-no-wrap">Consultations</th>
-              <th class="text-center whitespace-no-wrap">ACTIONS</th>
+              <th class="whitespace-no-wrap">Consultations</th>
+              <th class="whitespace-no-wrap">ACTIONS</th>
             </tr>
           </thead>
           <tbody>
@@ -107,6 +108,14 @@
                       :content="`Uploaded at ${faker.dates[0]}`"
                     />
                   </div>
+                </div>
+              </td>
+              <td>
+                <a href="" class="font-medium whitespace-no-wrap">{{
+                  faker.products[0].name
+                }}</a>
+                <div class="text-gray-600 text-xs whitespace-no-wrap">
+                  {{ faker.products[0].category }}
                 </div>
               </td>
               <td>
