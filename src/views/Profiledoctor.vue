@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="intro-y flex items-center mt-8">
-      <h2 class="text-lg font-medium mr-auto">Update Profile</h2>
+      <h2 class="text-lg font-medium mr-auto">Gestion de profil</h2>
     </div>
     <div class="grid grid-cols-12 gap-6">
       <!-- BEGIN: Profile Menu -->
@@ -115,6 +115,39 @@
                     disabled
                   />
                 </div>
+                <div class="mt-3">
+                  <label>Spécialité</label>
+                  <input
+                    type="text"
+                    class="input w-full border bg-gray-100 cursor-not-allowed mt-2"
+                    placeholder="Input text"
+                    :value="$f()[0].users[0].name"
+                    disabled
+                  />
+                </div>
+                <div class="mt-3">
+                  <label>Description du médécin</label>
+                  <textarea
+                    class="input w-full border mt-2"
+                    placeholder="Décrivez en quelques mots votre personne."
+                  >
+                  </textarea>
+                </div>
+                <div class="mt-3">
+                  <label>Consultation</label>
+                  <select class="input w-full border mt-2">
+                    <option>Domicile</option>
+                    <option>Hopital</option>
+                  </select>
+                </div>
+                <div class="mt-3">
+                  <label>Année d'expérience</label>
+                  <input
+                    type="text"
+                    class="input w-full border mt-2"
+                    placeholder="Input text"
+                  />
+                </div>
                 <button
                   type="button"
                   class="button w-24 bg-theme-1 text-white mt-3"
@@ -170,6 +203,19 @@
                     <option>Sénégal</option>
                   </select>
                 </div>
+                <div class="cursor-pointer relative mt-3">
+                  <label>Attestation du diplôme</label>
+                  <button
+                    type="button"
+                    class="button w-full bg-theme-1 text-white mt-2"
+                  >
+                    Chargez le fichier
+                  </button>
+                  <input
+                    type="file"
+                    class="w-full h-full top-0 left-0 absolute opacity-0"
+                  />
+                </div>
               </div>
               <div class="col-span-12 xl:col-span-6">
                 <div>
@@ -200,19 +246,12 @@
                   </select>
                 </div>
                 <div class="mt-3">
-                  <label>Attestation du diplome</label>
-                  <div class="mt-2">
-                    <button
-                      type="button"
-                      class="button w-full bg-theme-1 text-white"
-                    >
-                      Choisir une Photo
-                    </button>
-                    <input
-                      type="file"
-                      class="w-full h-full top-0 left-0 absolute opacity-0"
-                    />
-                  </div>
+                  <label>Immatriculation dans l’ordre des médecins</label>
+                  <input
+                    type="tel"
+                    class="input w-full border mt-2"
+                    placeholder="N°**********"
+                  />
                 </div>
               </div>
             </div>
@@ -224,7 +263,7 @@
                 type="button"
                 class="button w-20 bg-theme-1 text-white ml-auto"
               >
-                Save
+                Modifier
               </button>
             </div>
           </div>

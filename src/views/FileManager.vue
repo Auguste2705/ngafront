@@ -1,241 +1,167 @@
 <template>
-  <div class="grid grid-cols-12 gap-6 mt-8">
-    <div class="col-span-12 lg:col-span-3 xxl:col-span-2">
-      <h2 class="intro-y text-lg font-medium mr-auto mt-2">
-        File Manager
-      </h2>
-      <!-- BEGIN: File Manager Menu -->
-      <div class="intro-y box p-5 mt-6">
-        <div class="mt-1">
-          <a
-            href=""
-            class="flex items-center px-3 py-2 rounded-md bg-theme-1 text-white font-medium"
-          >
-            <ImageIcon class="w-4 h-4 mr-2" /> Images
-          </a>
-          <a href="" class="flex items-center px-3 py-2 mt-2 rounded-md">
-            <VideoIcon class="w-4 h-4 mr-2" /> Videos
-          </a>
-          <a href="" class="flex items-center px-3 py-2 mt-2 rounded-md">
-            <FileIcon class="w-4 h-4 mr-2" /> Documents
-          </a>
-          <a href="" class="flex items-center px-3 py-2 mt-2 rounded-md">
-            <UsersIcon class="w-4 h-4 mr-2" /> Shared
-          </a>
-          <a href="" class="flex items-center px-3 py-2 mt-2 rounded-md">
-            <TrashIcon class="w-4 h-4 mr-2" /> Trash
-          </a>
-        </div>
-        <div class="border-t border-gray-200 dark:border-dark-5 mt-5 pt-5">
-          <a href="" class="flex items-center px-3 py-2 rounded-md">
-            <div class="w-2 h-2 bg-theme-11 rounded-full mr-3"></div>
-            Custom Work
-          </a>
-          <a href="" class="flex items-center px-3 py-2 mt-2 rounded-md">
-            <div class="w-2 h-2 bg-theme-9 rounded-full mr-3"></div>
-            Important Meetings
-          </a>
-          <a href="" class="flex items-center px-3 py-2 mt-2 rounded-md">
-            <div class="w-2 h-2 bg-theme-12 rounded-full mr-3"></div>
-            Work
-          </a>
-          <a href="" class="flex items-center px-3 py-2 mt-2 rounded-md">
-            <div class="w-2 h-2 bg-theme-11 rounded-full mr-3"></div>
-            Design
-          </a>
-          <a href="" class="flex items-center px-3 py-2 mt-2 rounded-md">
-            <div class="w-2 h-2 bg-theme-6 rounded-full mr-3"></div>
-            Next Week
-          </a>
-          <a href="" class="flex items-center px-3 py-2 mt-2 rounded-md">
-            <PlusIcon class="w-4 h-4 mr-2" /> Add New Label
-          </a>
-        </div>
-      </div>
-      <!-- END: File Manager Menu -->
-    </div>
-    <div class="col-span-12 lg:col-span-9 xxl:col-span-10">
-      <!-- BEGIN: File Manager Filter -->
-      <div class="intro-y flex flex-col-reverse sm:flex-row items-center">
-        <div class="w-full sm:w-auto relative mr-auto mt-3 sm:mt-0">
-          <SearchIcon
-            class="w-4 h-4 absolute my-auto inset-y-0 ml-3 left-0 z-10 text-gray-700 dark:text-gray-300"
-          />
-          <input
-            type="text"
-            class="input w-full sm:w-64 box px-10 text-gray-700 dark:text-gray-300 placeholder-theme-13"
-            placeholder="Search files"
-          />
-          <div
-            class="inbox-filter dropdown absolute inset-y-0 mr-3 right-0 flex items-center"
-            data-placement="bottom-start"
-          >
-            <ChevronDownIcon
-              class="dropdown-toggle w-4 h-4 cursor-pointer text-gray-700 dark:text-gray-300"
+  <div>
+    <h2 class="intro-y text-lg font-medium mt-10 text-blue-600">
+      Liste des patients
+    </h2>
+    <div class="grid grid-cols-12 gap-6 mt-5">
+      <div
+        class="intro-y col-span-12 flex flex-wrap sm:flex-no-wrap items-center mt-2"
+      >
+        <!--        <button class="button text-white bg-theme-1 shadow-md mr-2">-->
+        <!--          Add New Product-->
+        <!--        </button>-->
+        <!--        <div class="dropdown">-->
+        <!--          <button-->
+        <!--            class="dropdown-toggle button px-2 box text-gray-700 dark:text-gray-300"-->
+        <!--          >-->
+        <!--            <span class="w-5 h-5 flex items-center justify-center">-->
+        <!--              <PlusIcon class="w-4 h-4" />-->
+        <!--            </span>-->
+        <!--          </button>-->
+        <!--          <div class="dropdown-box w-40">-->
+        <!--            <div class="dropdown-box__content box dark:bg-dark-1 p-2">-->
+        <!--              <a-->
+        <!--                href=""-->
+        <!--                class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"-->
+        <!--              >-->
+        <!--                <PrinterIcon class="w-4 h-4 mr-2" /> Print-->
+        <!--              </a>-->
+        <!--              <a-->
+        <!--                href=""-->
+        <!--                class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"-->
+        <!--              >-->
+        <!--                <FileTextIcon class="w-4 h-4 mr-2" /> Export to Excel-->
+        <!--              </a>-->
+        <!--              <a-->
+        <!--                href=""-->
+        <!--                class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"-->
+        <!--              >-->
+        <!--                <FileTextIcon class="w-4 h-4 mr-2" /> Export to PDF-->
+        <!--              </a>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--        </div>-->
+        <!--        <div class="hidden md:block mx-auto text-gray-600">-->
+        <!--          Showing 1 to 10 of 150 entries-->
+        <!--        </div>-->
+        <div class="w-full sm:w-auto mt-3 sm:mt-0 sm:ml-auto md:ml-0">
+          <div class="w-56 relative text-gray-700 dark:text-gray-300">
+            <input
+              type="text"
+              class="input w-56 box pr-10 placeholder-theme-13"
+              placeholder="Search..."
             />
-            <div class="inbox-filter__dropdown-box dropdown-box pt-2">
-              <div class="dropdown-box__content box p-5">
-                <div class="grid grid-cols-12 gap-4 row-gap-3">
-                  <div class="col-span-6">
-                    <div class="text-xs">File Name</div>
-                    <input
-                      type="text"
-                      class="input w-full border mt-2 flex-1"
-                      placeholder="Type the file name"
-                    />
-                  </div>
-                  <div class="col-span-6">
-                    <div class="text-xs">Shared With</div>
-                    <input
-                      type="text"
-                      class="input w-full border mt-2 flex-1"
-                      placeholder="example@gmail.com"
-                    />
-                  </div>
-                  <div class="col-span-6">
-                    <div class="text-xs">Created At</div>
-                    <input
-                      type="text"
-                      class="input w-full border mt-2 flex-1"
-                      placeholder="Important Meeting"
-                    />
-                  </div>
-                  <div class="col-span-6">
-                    <div class="text-xs">Size</div>
-                    <select class="input w-full border mt-2 flex-1">
-                      <option>10</option>
-                      <option>25</option>
-                      <option>35</option>
-                      <option>50</option>
-                    </select>
-                  </div>
-                  <div class="col-span-12 flex items-center mt-3">
-                    <button
-                      class="button w-32 justify-center block bg-gray-200 dark:bg-dark-1 text-gray-600 dark:text-gray-300 ml-auto"
-                    >
-                      Create Filter
-                    </button>
-                    <button
-                      class="button w-32 justify-center block bg-theme-1 text-white ml-2"
-                    >
-                      Search
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-full sm:w-auto flex">
-          <button class="button text-white bg-theme-1 shadow-md mr-2">
-            Upload New Files
-          </button>
-          <div id="test" class="dropdown">
-            <button
-              class="dropdown-toggle button px-2 box text-gray-700 dark:text-gray-300"
-            >
-              <span class="w-5 h-5 flex items-center justify-center">
-                <PlusIcon class="w-4 h-4" />
-              </span>
-            </button>
-            <div class="dropdown-box w-40">
-              <div class="dropdown-box__content box dark:bg-dark-1 p-2">
-                <a
-                  href="javascript:;"
-                  class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
-                >
-                  <FileIcon class="w-4 h-4 mr-2" /> Share Files
-                </a>
-                <a
-                  href="javascript:;"
-                  class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
-                >
-                  <SettingsIcon class="w-4 h-4 mr-2" /> Settings
-                </a>
-              </div>
-            </div>
+            <SearchIcon
+              class="w-4 h-4 absolute my-auto inset-y-0 mr-3 right-0"
+            />
           </div>
         </div>
       </div>
-      <!-- END: File Manager Filter -->
-      <!-- BEGIN: Directory & Files -->
-      <div class="intro-y grid grid-cols-12 gap-3 sm:gap-6 mt-5">
-        <div
-          v-for="(faker, fakerKey) in $f()"
-          :key="fakerKey"
-          class="intro-y col-span-6 sm:col-span-4 md:col-span-3 xxl:col-span-2"
-        >
-          <div
-            class="file box rounded-md px-5 pt-8 pb-5 px-3 sm:px-5 relative zoom-in"
-          >
-            <div class="absolute left-0 top-0 mt-3 ml-3">
-              <input class="input border border-gray-500" type="checkbox" />
-            </div>
-            <a
-              v-if="faker.files[0].type == 'Empty Folder'"
-              href=""
-              class="w-3/5 file__icon file__icon--empty-directory mx-auto"
-            ></a>
-            <a
-              v-else-if="faker.files[0].type == 'Folder'"
-              href=""
-              class="w-3/5 file__icon file__icon--directory mx-auto"
-            ></a>
-            <a
-              v-else-if="faker.files[0].type == 'Image'"
-              href=""
-              class="w-3/5 file__icon file__icon--image mx-auto"
+      <!-- BEGIN: Data List -->
+      <div class="intro-y col-span-12 overflow-auto lg:overflow-visible">
+        <table class="table table-report -mt-2">
+          <thead>
+            <tr>
+              <th class="whitespace-no-wrap">IMAGES</th>
+              <th class="whitespace-no-wrap">Nom</th>
+              <th class="text-center whitespace-no-wrap">Allergies</th>
+              <th class="text-center whitespace-no-wrap">
+                Date de consultations
+              </th>
+              <th class="text-center whitespace-no-wrap">Consultations</th>
+              <th class="text-center whitespace-no-wrap">ACTIONS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              v-for="(faker, fakerKey) in $_.take($f(), 9)"
+              :key="fakerKey"
+              class="intro-x"
             >
-              <div class="file__icon--image__preview image-fit">
-                <img
-                  alt="Midone Tailwind HTML Admin Template"
-                  :src="
-                    require(`@/assets/images/${$_.toLower(
-                      faker.files[0]['file_name']
-                    )}`)
-                  "
-                />
-              </div>
-            </a>
-            <a v-else href="" class="w-3/5 file__icon file__icon--file mx-auto">
-              <div class="file__icon__file-name">
-                {{ faker.files[0].type }}
-              </div>
-            </a>
-            <a href="" class="block font-medium mt-4 text-center truncate">{{
-              faker.files[0].file_name
-            }}</a>
-            <div class="text-gray-600 text-xs text-center">
-              {{ faker.files[0].size }}
-            </div>
-            <div class="absolute top-0 right-0 mr-2 mt-2 dropdown ml-auto">
-              <a class="dropdown-toggle w-5 h-5 block" href="javascript:;">
-                <MoreVerticalIcon class="w-5 h-5 text-gray-500" />
-              </a>
-              <div class="dropdown-box w-40">
-                <div class="dropdown-box__content box dark:bg-dark-1 p-2">
-                  <a
-                    href=""
-                    class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2  rounded-md"
-                  >
-                    <UsersIcon class="w-4 h-4 mr-2" /> Share File
+              <td class="w-40">
+                <div class="flex">
+                  <div class="w-10 h-10 image-fit zoom-in">
+                    <Tippy
+                      tag="img"
+                      alt="Midone Tailwind HTML Admin Template"
+                      class="rounded-full"
+                      :src="require(`@/assets/images/${faker.images[0]}`)"
+                      :content="`Uploaded at ${faker.dates[0]}`"
+                    />
+                  </div>
+                  <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                    <Tippy
+                      tag="img"
+                      alt="Midone Tailwind HTML Admin Template"
+                      class="rounded-full"
+                      :src="require(`@/assets/images/${faker.images[1]}`)"
+                      :content="`Uploaded at ${faker.dates[0]}`"
+                    />
+                  </div>
+                  <div class="w-10 h-10 image-fit zoom-in -ml-5">
+                    <Tippy
+                      tag="img"
+                      alt="Midone Tailwind HTML Admin Template"
+                      class="rounded-full"
+                      :src="require(`@/assets/images/${faker.images[2]}`)"
+                      :content="`Uploaded at ${faker.dates[0]}`"
+                    />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <a href="" class="font-medium whitespace-no-wrap">{{
+                  faker.products[0].name
+                }}</a>
+                <div class="text-gray-600 text-xs whitespace-no-wrap">
+                  {{ faker.products[0].category }}
+                </div>
+              </td>
+              <td>
+                <a href="" class="font-medium whitespace-no-wrap">{{
+                  faker.products[0].name
+                }}</a>
+                <div class="text-gray-600 text-xs whitespace-no-wrap">
+                  {{ faker.products[0].category }}
+                </div>
+              </td>
+              <td class="text-center">{{ faker.stocks[0] }}</td>
+              <td class="w-40">
+                <div
+                  class="flex items-center justify-center"
+                  :class="{
+                    'text-theme-9': faker.true_false[0],
+                    'text-theme-6': !faker.true_false[0]
+                  }"
+                >
+                  <CheckSquareIcon class="w-4 h-4 mr-2" />
+                  {{ faker.true_false[0] ? "Oui" : "Non" }}
+                </div>
+              </td>
+              <td class="table-report__action w-56">
+                <div class="flex justify-center items-center">
+                  <a class="flex items-center mr-3" href="javascript:;">
+                    <CheckSquareIcon class="w-4 h-4 mr-1" />
+                    Edit
                   </a>
                   <a
-                    href=""
-                    class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2  rounded-md"
+                    class="flex items-center text-theme-6"
+                    href="javascript:;"
+                    data-toggle="modal"
+                    data-target="#delete-confirmation-modal"
                   >
-                    <TrashIcon class="w-4 h-4 mr-2" /> Delete
+                    <Trash2Icon class="w-4 h-4 mr-1" /> Delete
                   </a>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <!-- END: Directory & Files -->
+      <!-- END: Data List -->
       <!-- BEGIN: Pagination -->
       <div
-        class="intro-y flex flex-wrap sm:flex-row sm:flex-no-wrap items-center mt-6"
+        class="intro-y col-span-12 flex flex-wrap sm:flex-row sm:flex-no-wrap items-center"
       >
         <ul class="pagination">
           <li>
@@ -283,5 +209,31 @@
       </div>
       <!-- END: Pagination -->
     </div>
+    <!-- BEGIN: Delete Confirmation Modal -->
+    <div id="delete-confirmation-modal" class="modal">
+      <div class="modal__content">
+        <div class="p-5 text-center">
+          <xCircleIcon class="w-16 h-16 text-theme-6 mx-auto mt-3" />
+          <div class="text-3xl mt-5">Are you sure?</div>
+          <div class="text-gray-600 mt-2">
+            Do you really want to delete these records? This process cannot be
+            undone.
+          </div>
+        </div>
+        <div class="px-5 pb-8 text-center">
+          <button
+            type="button"
+            data-dismiss="modal"
+            class="button w-24 border text-gray-700 mr-1"
+          >
+            Cancel
+          </button>
+          <button type="button" class="button w-24 bg-theme-6 text-white">
+            Delete
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- END: Delete Confirmation Modal -->
   </div>
 </template>

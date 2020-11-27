@@ -18,6 +18,11 @@ const state = () => {
       },
       {
         icon: "HardDriveIcon",
+        pageName: "side-menu-file-manager",
+        title: "Liste des patients"
+      },
+      {
+        icon: "HardDriveIcon",
         pageName: "Patientlist",
         title: "Liste patients"
       },
@@ -45,11 +50,6 @@ const state = () => {
             ignore: true
           }
         ]
-      },
-      {
-        icon: "HardDriveIcon",
-        pageName: "side-menu-file-manager",
-        title: "File Manager"
       },
       {
         icon: "CreditCardIcon",
