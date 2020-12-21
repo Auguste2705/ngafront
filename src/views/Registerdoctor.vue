@@ -19,7 +19,7 @@
             <div id="input" class="p-5">
               <div class="lg:w-full mb-6 md:mb-0">
                 <div>
-                  <label class="text-blue-700">Nom de l'hopital</label>
+                  <label>Nom de l'hopital</label>
                   <input
                     type="text"
                     class="input w-full border mt-2"
@@ -30,7 +30,7 @@
               <div class="flex flex-wrap -mx-3 mt-4 mb-4">
                 <div class="w-full md:w-1/2 px-3">
                   <div>
-                    <label class="text-blue-700">Département</label>
+                    <label>Département</label>
                     <div>
                       <select class="input w-full border mt-2">
                         <option>Optique</option>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="w-full md:w-1/2 px-3">
                   <div>
-                    <label class="text-blue-700">Adresse de l'hopital</label>
+                    <label>Adresse de l'hopital</label>
                     <input
                       type="text"
                       class="input w-full border mt-2"
@@ -53,7 +53,7 @@
               </div>
               <div class="flex flex-wrap -mx-3 mt-4 mb-4">
                 <div class="w-full md:w-1/2 px-3">
-                  <label class="text-blue-700">Adresse mail de l'hopital</label>
+                  <label>Adresse mail de l'hopital</label>
                   <input
                     type="text"
                     class="input w-full border mt-2"
@@ -62,7 +62,7 @@
                 </div>
                 <div class="w-full md:w-1/2 px-3">
                   <div>
-                    <label class="text-blue-700">Téléphone</label>
+                    <label>Téléphone</label>
                     <input
                       type="text"
                       class="input w-full border mt-2"
@@ -73,7 +73,7 @@
               </div>
               <div class="flex flex-wrap -mx-3 mt-4 mb-4">
                 <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                  <label class="text-blue-700">Code Postal</label>
+                  <label>Code Postal</label>
                   <input
                     type="text"
                     class="input w-full border mt-2"
@@ -81,7 +81,7 @@
                   />
                 </div>
                 <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                  <label class="text-blue-700">Ville</label>
+                  <label>Ville</label>
                   <div>
                     <select class="input w-full border mt-2">
                       <option>Optique</option>
@@ -91,7 +91,7 @@
                   </div>
                 </div>
                 <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                  <label class="text-blue-700">Pays</label>
+                  <label>Pays</label>
                   <div>
                     <select class="input w-full border mt-2">
                       <option>Optique</option>
@@ -106,9 +106,7 @@
                 <div id="single-file-upload">
                   <div class="preview">
                     <div class="mb-2">
-                      <label class="text-blue-700"
-                        >Attestation de Réussite</label
-                      >
+                      <label>Attestation de Réussite</label>
                     </div>
                     <VueDropzone
                       id="dropzone-single"

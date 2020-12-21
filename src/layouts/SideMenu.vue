@@ -12,13 +12,10 @@
           class="intro-x flex items-center pl-5 pt-4"
         >
           <img
-            alt="Midone Tailwind HTML Admin Template"
-            class="w-6"
-            src="@/assets/images/logo.svg"
+            alt="Midone Tailwind HTML Admin Template 1"
+            class="w-20"
+            src="@/assets/images/nga_logo/android-144x144.jpg"
           />
-          <span class="hidden xl:block text-white text-lg ml-3">
-            Mid<span class="font-medium">one</span>
-          </span>
         </router-link>
         <!-- END: Logo -->
         <div class="side-nav__devider my-6"></div>

@@ -27,31 +27,6 @@ const state = () => {
         title: "Facture"
       },
       {
-        icon: "BoxIcon",
-        pageName: "side-menu-menu-layout",
-        title: "Menu Layout",
-        subMenu: [
-          {
-            icon: "",
-            pageName: "side-menu-dashboard",
-            title: "Side Menu",
-            ignore: true
-          },
-          {
-            icon: "",
-            pageName: "simple-menu-dashboard",
-            title: "Simple Menu",
-            ignore: true
-          },
-          {
-            icon: "",
-            pageName: "top-menu-dashboard",
-            title: "Top Menu",
-            ignore: true
-          }
-        ]
-      },
-      {
         icon: "MessageSquareIcon",
         pageName: "side-menu-chat",
         title: "Chat"
@@ -73,7 +48,7 @@ const state = () => {
           },
           {
             icon: "",
-            pageName: "side-menu-change-password",
+            pageName: "Addservice",
             title: "Ajouter un service"
           }
         ]
@@ -92,6 +67,23 @@ const state = () => {
             icon: "",
             pageName: "side-menu-crud-data-list",
             title: "Data List"
+          }
+        ]
+      },
+      {
+        icon: "HexagonIcon",
+        pageName: "side-menu-pricing",
+        title: "Abonnement",
+        subMenu: [
+          {
+            icon: "",
+            pageName: "Subscription",
+            title: "liste des abonnements"
+          },
+          {
+            icon: "",
+            pageName: "side-menu-point-of-sale",
+            title: "Layout 1"
           }
         ]
       }

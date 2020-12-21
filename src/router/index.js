@@ -66,6 +66,8 @@ import ListPatient from "../views/ListPatient";
 import Facture from "../views/Facture";
 import Listservice from "../views/Listservice";
 import Article from "../views/Article";
+import Subscription from "../views/Subscription";
+import Addservice from "../views/Addservice";
 
 Vue.use(VueRouter);
 
@@ -106,6 +108,11 @@ const routes = [
         component: Facture
       },
       {
+        path: "/add_service",
+        name: "Addservice",
+        component: Addservice
+      },
+      {
         path: "/list_service",
         name: "Listservice",
         component: Listservice
@@ -114,6 +121,11 @@ const routes = [
         path: "/article",
         name: "Article",
         component: Article
+      },
+      {
+        path: "/subscription",
+        name: "Subscription",
+        component: Subscription
       },
       {
         path: "inbox",

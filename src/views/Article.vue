@@ -8,7 +8,7 @@
         <!-- BEGIN: Form Layout -->
         <div class="intro-y box p-5">
           <div>
-            <label>Product Name</label>
+            <label>Nom de l'article</label>
             <input
               type="text"
               class="input w-full border mt-2"
@@ -16,7 +16,15 @@
             />
           </div>
           <div class="mt-3">
-            <label>Category</label>
+            <label>Objet</label>
+            <input
+              type="text"
+              class="input w-full border mt-2"
+              placeholder="Input text"
+            />
+          </div>
+          <div class="mt-3">
+            <label>Categorie</label>
             <div class="mt-2">
               <TailSelect
                 v-model="categories"
@@ -35,83 +43,6 @@
                 <option value="3">Smartphone & Tablet</option>
                 <option value="4">Photography</option>
               </TailSelect>
-            </div>
-          </div>
-          <div class="mt-3">
-            <label>Quantity</label>
-            <div class="relative mt-2">
-              <input
-                type="text"
-                class="input pr-12 w-full border col-span-4"
-                placeholder="Price"
-              />
-              <div
-                class="absolute top-0 right-0 rounded-r w-10 h-full flex items-center justify-center bg-gray-100 dark:bg-dark-1 dark:border-dark-4 border text-gray-600"
-              >
-                pcs
-              </div>
-            </div>
-          </div>
-          <div class="mt-3">
-            <label>Weight</label>
-            <div class="relative mt-2">
-              <input
-                type="text"
-                class="input pr-16 w-full border col-span-4"
-                placeholder="Price"
-              />
-              <div
-                class="absolute top-0 right-0 rounded-r w-16 h-full flex items-center justify-center bg-gray-100 dark:bg-dark-1 dark:border-dark-4 border text-gray-600"
-              >
-                grams
-              </div>
-            </div>
-          </div>
-          <div class="mt-3">
-            <label>Price</label>
-            <div class="sm:grid grid-cols-3 gap-2">
-              <div class="relative mt-2">
-                <div
-                  class="absolute top-0 left-0 rounded-l w-12 h-full flex items-center justify-center bg-gray-100 dark:bg-dark-1 dark:border-dark-4 border text-gray-600"
-                >
-                  Unit
-                </div>
-                <div class="pl-3">
-                  <input
-                    type="text"
-                    class="input pl-12 w-full border col-span-4"
-                    placeholder="Price"
-                  />
-                </div>
-              </div>
-              <div class="relative mt-2">
-                <div
-                  class="absolute top-0 left-0 rounded-l w-20 h-full flex items-center justify-center bg-gray-100 dark:bg-dark-1 dark:border-dark-4 border text-gray-600"
-                >
-                  Wholesale
-                </div>
-                <div class="pl-3">
-                  <input
-                    type="text"
-                    class="input pl-20 w-full border col-span-4"
-                    placeholder="Price"
-                  />
-                </div>
-              </div>
-              <div class="relative mt-2">
-                <div
-                  class="absolute top-0 left-0 rounded-l w-12 h-full flex items-center justify-center bg-gray-100 dark:bg-dark-1 dark:border-dark-4 border text-gray-600"
-                >
-                  Bulk
-                </div>
-                <div class="pl-3">
-                  <input
-                    type="text"
-                    class="input pl-12 w-full border col-span-4"
-                    placeholder="Price"
-                  />
-                </div>
-              </div>
             </div>
           </div>
           <div class="mt-3">

@@ -7,7 +7,7 @@
       <!-- BEGIN: FAQ Menu -->
       <a
         href=""
-        class="intro-y col-span-12 lg:col-span-4 box py-10 bg-blue-100 border-2 border-theme-1 dark:border-theme-1"
+        class="intro-y col-span-12 lg:col-span-4 box py-10 bg-blue-100 hover:bg-white border-2 border-theme-1 dark:border-theme-1"
       >
         <ShieldIcon class="w-12 h-12 text-theme-1 dark:text-theme-10 mx-auto" />
         <div class="font-medium text-center text-base mt-3">
@@ -22,7 +22,10 @@
           >
         </div>
       </a>
-      <a href="" class="intro-y col-span-12 lg:col-span-4 box py-10">
+      <a
+        href=""
+        class="intro-y col-span-12 lg:col-span-4 box py-10 hover:bg-blue-100 border-2 border-theme-1 dark:border-theme-1"
+      >
         <SendIcon class="w-12 h-12 text-theme-1 dark:text-theme-10 mx-auto" />
         <div class="font-medium text-center text-base mt-3">
           Gynécologie
@@ -38,7 +41,7 @@
       </a>
       <a
         href=""
-        class="intro-y col-span-12 lg:col-span-4 box py-10 bg-blue-100 border-2 border-theme-1 dark:border-theme-1"
+        class="intro-y col-span-12 lg:col-span-4 box py-10 bg-blue-100 hover:bg-white border-2 border-theme-1 dark:border-theme-1"
       >
         <TrendingUpIcon
           class="w-12 h-12 text-theme-1 dark:text-theme-10 mx-auto"
