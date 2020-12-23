@@ -26,16 +26,16 @@ const state = () => {
         pageName: "Facture",
         title: "Facture"
       },
-      {
-        icon: "MessageSquareIcon",
-        pageName: "side-menu-chat",
-        title: "Chat"
-      },
-      {
-        icon: "FileTextIcon",
-        pageName: "side-menu-post",
-        title: "Post"
-      },
+      // {
+      //   icon: "MessageSquareIcon",
+      //   pageName: "side-menu-chat",
+      //   title: "Chat"
+      // },
+      // {
+      //   icon: "FileTextIcon",
+      //   pageName: "side-menu-post",
+      //   title: "Post"
+      // },
       {
         icon: "LayoutIcon",
         pageName: "side-menu-layout",
@@ -84,6 +84,28 @@ const state = () => {
             icon: "",
             pageName: "side-menu-point-of-sale",
             title: "Layout 1"
+          }
+        ]
+      },
+      {
+        icon: "FilmIcon",
+        pageName: "side-menu-blog",
+        title: "Calendrier",
+        subMenu: [
+          {
+            icon: "",
+            pageName: "side-menu-blog-layout-1",
+            title: "Layout 1"
+          },
+          {
+            icon: "",
+            pageName: "side-menu-blog-layout-2",
+            title: "Layout 2"
+          },
+          {
+            icon: "",
+            pageName: "side-menu-blog-layout-3",
+            title: "Layout 3"
           }
         ]
       }
