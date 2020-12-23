@@ -104,7 +104,7 @@
               href="/list_service"
               class="button button--sm border text-gray-700 dark:bg-dark-5 dark:text-gray-300 ml-auto"
             >
-              Nouveau service
+              Liste des services
             </a>
           </div>
         </div>
