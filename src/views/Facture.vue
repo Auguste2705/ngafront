@@ -40,7 +40,7 @@
       >
         <div class="px-5 py-10 sm:px-20 sm:py-20">
           <div class="text-theme-1 dark:text-theme-10 font-semibold text-3xl">
-            INVOICE
+            FACTURE N°
           </div>
           <div class="mt-2">
             Receipt <span class="font-medium">#1923195</span>
@@ -51,7 +51,7 @@
           class="flex flex-col lg:flex-row px-5 sm:px-20 pt-10 pb-10 sm:pb-20"
         >
           <div class="">
-            <div class="text-base text-gray-600">Client Details</div>
+            <div class="text-base text-gray-600">Details du client</div>
             <div
               class="text-lg font-medium text-theme-1 dark:text-theme-10 mt-2"
             >
@@ -61,7 +61,7 @@
             <div class="mt-1">260 W. Storm Street New York, NY 10025.</div>
           </div>
           <div class="lg:text-right mt-10 lg:mt-0 lg:ml-auto">
-            <div class="text-base text-gray-600">Payment to</div>
+            <div class="text-base text-gray-600">Payé le</div>
             <div
               class="text-lg font-medium text-theme-1 dark:text-theme-10 mt-2"
             >
