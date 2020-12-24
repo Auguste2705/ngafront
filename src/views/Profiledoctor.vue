@@ -287,6 +287,19 @@
                     class="w-full h-full top-0 left-0 absolute opacity-0"
                   />
                 </div>
+                <div class="cursor-pointer relative mt-3">
+                  <label>Photocopie Passport</label>
+                  <button
+                    type="button"
+                    class="button w-full bg-theme-1 text-white mt-2"
+                  >
+                    Chargez votre passport ici
+                  </button>
+                  <input
+                    type="file"
+                    class="w-full h-full top-0 left-0 absolute opacity-0"
+                  />
+                </div>
               </div>
               <div class="col-span-12 xl:col-span-6">
                 <div>
@@ -324,18 +337,13 @@
                     placeholder="N°**********"
                   />
                 </div>
-                <div class="cursor-pointer relative mt-3">
-                  <label>Photocopie Passport</label>
-                  <button
-                    type="button"
-                    class="button w-full bg-theme-1 text-white mt-2"
-                  >
-                    Chargez votre passport ici
-                  </button>
-                  <input
-                    type="file"
-                    class="w-full h-full top-0 left-0 absolute opacity-0"
-                  />
+                <div class="mt-3">
+                  <label>Type de pièce</label>
+                  <select class="input w-full border mt-2">
+                    <option>CNI</option>
+                    <option>Passport</option>
+                    <option>Permis de conduire</option>
+                  </select>
                 </div>
               </div>
             </div>

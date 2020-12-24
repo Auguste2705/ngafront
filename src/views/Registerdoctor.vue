@@ -101,6 +101,31 @@
                   </div>
                 </div>
               </div>
+              <div class="flex flex-wrap -mx-3 mt-4 mb-4">
+                <div class="w-full md:w-1/2 px-3">
+                  <div>
+                    <label>Type de pièce</label>
+                    <div>
+                      <select class="input w-full border mt-2">
+                        <option>CNI</option>
+                        <option>Passeport</option>
+                        <option>Permis de conduire</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full md:w-1/2 px-3">
+                  <div>
+                    <label>Pièce jointe de la pièce</label>
+                    <button
+                      type="button"
+                      class="button w-full bg-theme-1 text-white mt-2"
+                    >
+                      Chargez le fichier
+                    </button>
+                  </div>
+                </div>
+              </div>
               <!--                File upload-->
               <div class="lg:w-full mb-6 md:mb-0">
                 <div id="single-file-upload">

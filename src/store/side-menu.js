@@ -79,12 +79,12 @@ const state = () => {
             icon: "",
             pageName: "Subscription",
             title: "liste des abonnements"
-          },
-          {
-            icon: "",
-            pageName: "side-menu-point-of-sale",
-            title: "Layout 1"
           }
+          // {
+          //   icon: "",
+          //   pageName: "side-menu-point-of-sale",
+          //   title: "Layout 1"
+          // }
         ]
       },
       {

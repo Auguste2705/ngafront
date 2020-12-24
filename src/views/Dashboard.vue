@@ -94,7 +94,7 @@
       </div>
       <!-- END: General Report -->
       <!-- BEGIN: Sales Report -->
-      <div class="col-span-12 lg:col-span-6 mt-8">
+      <div class="col-span-12 lg:col-span-12 mt-8">
         <div class="intro-y block sm:flex items-center h-10">
           <h2 class="text-lg font-medium truncate mr-5">
             Sales Report
@@ -193,86 +193,16 @@
         </div>
       </div>
       <!-- END: Sales Report -->
-      <!-- BEGIN: Weekly Top Seller -->
-      <div class="col-span-12 sm:col-span-6 lg:col-span-3 mt-8">
-        <div class="intro-y box p-5 mt-5">
-          <ReportPieChart :height="210" class="mt-3" />
-          <div class="mt-8">
-            <div class="flex items-center">
-              <div class="w-2 h-2 bg-theme-11 rounded-full mr-3"></div>
-              <span class="truncate">17 - 30 Years old</span>
-              <div
-                class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"
-              ></div>
-              <span class="font-medium xl:ml-auto">62%</span>
-            </div>
-            <div class="flex items-center mt-4">
-              <div class="w-2 h-2 bg-theme-1 rounded-full mr-3"></div>
-              <span class="truncate">31 - 50 Years old</span>
-              <div
-                class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"
-              ></div>
-              <span class="font-medium xl:ml-auto">33%</span>
-            </div>
-            <div class="flex items-center mt-4">
-              <div class="w-2 h-2 bg-theme-12 rounded-full mr-3"></div>
-              <span class="truncate">>= 50 Years old</span>
-              <div
-                class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"
-              ></div>
-              <span class="font-medium xl:ml-auto">10%</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END: Weekly Top Seller -->
-      <!-- BEGIN: Sales Report -->
-      <div class="col-span-12 sm:col-span-6 lg:col-span-3 mt-8">
-        <div class="intro-y box p-5 mt-5">
-          <ReportDonutChart :height="210" class="mt-3" />
-          <div class="mt-8">
-            <div class="flex items-center">
-              <div class="w-2 h-2 bg-theme-11 rounded-full mr-3"></div>
-              <span class="truncate">17 - 30 Years old</span>
-              <div
-                class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"
-              ></div>
-              <span class="font-medium xl:ml-auto">62%</span>
-            </div>
-            <div class="flex items-center mt-4">
-              <div class="w-2 h-2 bg-theme-1 rounded-full mr-3"></div>
-              <span class="truncate">31 - 50 Years old</span>
-              <div
-                class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"
-              ></div>
-              <span class="font-medium xl:ml-auto">33%</span>
-            </div>
-            <div class="flex items-center mt-4">
-              <div class="w-2 h-2 bg-theme-12 rounded-full mr-3"></div>
-              <span class="truncate">>= 50 Years old</span>
-              <div
-                class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"
-              ></div>
-              <span class="font-medium xl:ml-auto">10%</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END: Sales Report -->
     </div>
   </div>
 </template>
 
 <script>
 import ReportLineChart from "@/components/ReportLineChart";
-import ReportDonutChart from "@/components/ReportDonutChart";
-import ReportPieChart from "@/components/ReportPieChart";
 
 export default {
   components: {
-    ReportLineChart,
-    ReportDonutChart,
-    ReportPieChart
+    ReportLineChart
   },
   data() {
     return {
