@@ -65,8 +65,8 @@ const state = () => {
           },
           {
             icon: "",
-            pageName: "side-menu-crud-data-list",
-            title: "Data List"
+            pageName: "Listarticle",
+            title: "Liste de mes articles"
           }
         ]
       },

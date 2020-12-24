@@ -68,6 +68,7 @@ import Listservice from "../views/Listservice";
 import Article from "../views/Article";
 import Subscription from "../views/Subscription";
 import Addservice from "../views/Addservice";
+import Listarticle from "../views/Listarticle";
 
 Vue.use(VueRouter);
 
@@ -121,6 +122,11 @@ const routes = [
         path: "/article",
         name: "Article",
         component: Article
+      },
+      {
+        path: "/list_article",
+        name: "Listarticle",
+        component: Listarticle
       },
       {
         path: "/subscription",

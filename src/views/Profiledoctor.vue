@@ -292,9 +292,9 @@
                 <div>
                   <label>Département</label>
                   <select class="input w-full border mt-2">
-                    <option>IC</option>
-                    <option>FIN</option>
-                    <option>Passport</option>
+                    <option>Généraliste</option>
+                    <option>Dermatologie</option>
+                    <option>Ophtamologie</option>
                   </select>
                 </div>
                 <div class="mt-3">
@@ -322,6 +322,19 @@
                     type="tel"
                     class="input w-full border mt-2"
                     placeholder="N°**********"
+                  />
+                </div>
+                <div class="cursor-pointer relative mt-3">
+                  <label>Photocopie Passport</label>
+                  <button
+                    type="button"
+                    class="button w-full bg-theme-1 text-white mt-2"
+                  >
+                    Chargez votre passport ici
+                  </button>
+                  <input
+                    type="file"
+                    class="w-full h-full top-0 left-0 absolute opacity-0"
                   />
                 </div>
               </div>

@@ -1,49 +1,47 @@
 <template>
   <div>
-    <h2 class="intro-y text-lg font-medium mt-10 text-blue-600">
-      Liste des patients
-    </h2>
+    <h2 class="intro-y text-lg font-medium mt-10">Data List Layout</h2>
     <div class="grid grid-cols-12 gap-6 mt-5">
       <div
         class="intro-y col-span-12 flex flex-wrap sm:flex-no-wrap items-center mt-2"
       >
-        <!--        <button class="button text-white bg-theme-1 shadow-md mr-2">-->
-        <!--          Add New Product-->
-        <!--        </button>-->
-        <!--        <div class="dropdown">-->
-        <!--          <button-->
-        <!--            class="dropdown-toggle button px-2 box text-gray-700 dark:text-gray-300"-->
-        <!--          >-->
-        <!--            <span class="w-5 h-5 flex items-center justify-center">-->
-        <!--              <PlusIcon class="w-4 h-4" />-->
-        <!--            </span>-->
-        <!--          </button>-->
-        <!--          <div class="dropdown-box w-40">-->
-        <!--            <div class="dropdown-box__content box dark:bg-dark-1 p-2">-->
-        <!--              <a-->
-        <!--                href=""-->
-        <!--                class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"-->
-        <!--              >-->
-        <!--                <PrinterIcon class="w-4 h-4 mr-2" /> Print-->
-        <!--              </a>-->
-        <!--              <a-->
-        <!--                href=""-->
-        <!--                class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"-->
-        <!--              >-->
-        <!--                <FileTextIcon class="w-4 h-4 mr-2" /> Export to Excel-->
-        <!--              </a>-->
-        <!--              <a-->
-        <!--                href=""-->
-        <!--                class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"-->
-        <!--              >-->
-        <!--                <FileTextIcon class="w-4 h-4 mr-2" /> Export to PDF-->
-        <!--              </a>-->
-        <!--            </div>-->
-        <!--          </div>-->
-        <!--        </div>-->
-        <!--        <div class="hidden md:block mx-auto text-gray-600">-->
-        <!--          Showing 1 to 10 of 150 entries-->
-        <!--        </div>-->
+        <button class="button text-white bg-theme-1 shadow-md mr-2">
+          Add New Product
+        </button>
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle button px-2 box text-gray-700 dark:text-gray-300"
+          >
+            <span class="w-5 h-5 flex items-center justify-center">
+              <PlusIcon class="w-4 h-4" />
+            </span>
+          </button>
+          <div class="dropdown-box w-40">
+            <div class="dropdown-box__content box dark:bg-dark-1 p-2">
+              <a
+                href=""
+                class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
+              >
+                <PrinterIcon class="w-4 h-4 mr-2" /> Print
+              </a>
+              <a
+                href=""
+                class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
+              >
+                <FileTextIcon class="w-4 h-4 mr-2" /> Export to Excel
+              </a>
+              <a
+                href=""
+                class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"
+              >
+                <FileTextIcon class="w-4 h-4 mr-2" /> Export to PDF
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:block mx-auto text-gray-600">
+          Showing 1 to 10 of 150 entries
+        </div>
         <div class="w-full sm:w-auto mt-3 sm:mt-0 sm:ml-auto md:ml-0">
           <div class="w-56 relative text-gray-700 dark:text-gray-300">
             <input
@@ -63,14 +61,10 @@
           <thead>
             <tr>
               <th class="whitespace-no-wrap">IMAGES</th>
-              <th class="whitespace-no-wrap">Nom</th>
-              <th class="whitespace-no-wrap">Prénom</th>
-              <!--              <th class="whitespace-no-wrap">Allergies</th>-->
-              <th class="whitespace-no-wrap">
-                Date de consultations
-              </th>
-              <th class="whitespace-no-wrap">Consultations</th>
-              <th class="whitespace-no-wrap">ACTIONS</th>
+              <th class="whitespace-no-wrap">PRODUCT NAME</th>
+              <th class="text-center whitespace-no-wrap">STOCK</th>
+              <th class="text-center whitespace-no-wrap">STATUS</th>
+              <th class="text-center whitespace-no-wrap">ACTIONS</th>
             </tr>
           </thead>
           <tbody>
@@ -118,14 +112,6 @@
                   {{ faker.products[0].category }}
                 </div>
               </td>
-              <td>
-                <a href="" class="font-medium whitespace-no-wrap">{{
-                  faker.products[0].name
-                }}</a>
-                <div class="text-gray-600 text-xs whitespace-no-wrap">
-                  {{ faker.products[0].category }}
-                </div>
-              </td>
               <td class="text-center">{{ faker.stocks[0] }}</td>
               <td class="w-40">
                 <div
@@ -136,7 +122,7 @@
                   }"
                 >
                   <CheckSquareIcon class="w-4 h-4 mr-2" />
-                  {{ faker.true_false[0] ? "Oui" : "Non" }}
+                  {{ faker.true_false[0] ? "Active" : "Inactive" }}
                 </div>
               </td>
               <td class="table-report__action w-56">
