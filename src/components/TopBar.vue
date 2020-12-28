@@ -109,7 +109,9 @@
         <div
           class="notification-content__box dropdown-box__content box dark:bg-dark-6"
         >
-          <div class="notification-content__title">Notifications</div>
+          <div class="notification-content__title">
+            Notifications de prise de RDV
+          </div>
           <div
             v-for="(faker, fakerKey) in $_.take($f(), 5)"
             :key="fakerKey"
@@ -166,22 +168,10 @@
           </div>
           <div class="p-2">
             <a
-              href
+              href=""
               class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"
             >
               <UserIcon class="w-4 h-4 mr-2" /> Mon profil médécin
-            </a>
-            <a
-              href
-              class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"
-            >
-              <EditIcon class="w-4 h-4 mr-2" /> Add Account
-            </a>
-            <a
-              href
-              class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"
-            >
-              <SettingsIcon class="w-4 h-4 mr-2" /> Parametre de profil
             </a>
           </div>
           <div class="p-2 border-t border-theme-40 dark:border-dark-3">
@@ -202,9 +192,9 @@
 </template>
 
 <script>
-import SettingsIcon from "vue-feather-icons/icons/SettingsIcon";
+// import SettingsIcon from "vue-feather-icons/icons/SettingsIcon";
 export default {
-  components: { SettingsIcon },
+  // components: { SettingsIcon },
   data() {
     return {
       searchDropdown: false

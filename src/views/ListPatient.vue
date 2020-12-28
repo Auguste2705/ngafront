@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="intro-y text-lg font-medium mt-10 text-blue-600">
+    <h2 class="intro-y text-lg font-medium mt-10">
       Liste des patients
     </h2>
     <div class="grid grid-cols-12 gap-6 mt-5">

@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h2 class="intro-y text-lg font-medium mt-10">Data List Layout</h2>
+    <h2 class="intro-y text-lg font-medium mt-10">Mes articles</h2>
     <div class="grid grid-cols-12 gap-6 mt-5">
       <div
         class="intro-y col-span-12 flex flex-wrap sm:flex-no-wrap items-center mt-2"
       >
-        <button class="button text-white bg-theme-1 shadow-md mr-2">
-          Add New Product
-        </button>
+        <a href="/article" class="button text-white bg-theme-1 shadow-md mr-2">
+          Ajouter un nouvel article
+        </a>
         <div class="dropdown">
           <button
             class="dropdown-toggle button px-2 box text-gray-700 dark:text-gray-300"
@@ -40,7 +40,7 @@
           </div>
         </div>
         <div class="hidden md:block mx-auto text-gray-600">
-          Showing 1 to 10 of 150 entries
+          <!--          Showing 1 to 10 of 150 entries-->
         </div>
         <div class="w-full sm:w-auto mt-3 sm:mt-0 sm:ml-auto md:ml-0">
           <div class="w-56 relative text-gray-700 dark:text-gray-300">
@@ -61,10 +61,11 @@
           <thead>
             <tr>
               <th class="whitespace-no-wrap">IMAGES</th>
-              <th class="whitespace-no-wrap">PRODUCT NAME</th>
-              <th class="text-center whitespace-no-wrap">STOCK</th>
-              <th class="text-center whitespace-no-wrap">STATUS</th>
-              <th class="text-center whitespace-no-wrap">ACTIONS</th>
+              <th class="whitespace-no-wrap">N° de l'article</th>
+              <th class="text-center whitespace-no-wrap">Nom de l'article</th>
+              <th class="text-center whitespace-no-wrap">Catégorie</th>
+              <th class="text-center whitespace-no-wrap">Status</th>
+              <th class="text-center whitespace-no-wrap">Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -104,7 +105,10 @@
                   </div>
                 </div>
               </td>
-              <td>
+              <td class="text-center">
+                {{ faker.stocks[0] }}
+              </td>
+              <td class="text-center">
                 <a href="" class="font-medium whitespace-no-wrap">{{
                   faker.products[0].name
                 }}</a>
@@ -112,7 +116,14 @@
                   {{ faker.products[0].category }}
                 </div>
               </td>
-              <td class="text-center">{{ faker.stocks[0] }}</td>
+              <td class="text-center">
+                <a href="" class="font-medium whitespace-no-wrap">{{
+                  faker.products[0].name
+                }}</a>
+                <div class="text-gray-600 text-xs whitespace-no-wrap">
+                  {{ faker.products[0].category }}
+                </div>
+              </td>
               <td class="w-40">
                 <div
                   class="flex items-center justify-center"
@@ -122,7 +133,7 @@
                   }"
                 >
                   <CheckSquareIcon class="w-4 h-4 mr-2" />
-                  {{ faker.true_false[0] ? "Active" : "Inactive" }}
+                  {{ faker.true_false[0] ? "Publié" : "Non publié" }}
                 </div>
               </td>
               <td class="table-report__action w-56">
