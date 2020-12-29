@@ -41,7 +41,7 @@
             <h2
               class="intro-x font-bold text-2xl xl:text-3xl text-center xl:text-left"
             >
-              Sign Up
+              Inscription
             </h2>
             <div
               class="intro-x mt-2 text-gray-500 dark:text-gray-500 xl:hidden text-center"
@@ -53,13 +53,13 @@
               <input
                 type="text"
                 class="intro-x login__input input input--lg border border-gray-300 block"
-                placeholder="First Name"
+                placeholder="Username"
               />
-              <input
-                type="text"
-                class="intro-x login__input input input--lg border border-gray-300 block mt-4"
-                placeholder="Last Name"
-              />
+              <!--              <input-->
+              <!--                type="text"-->
+              <!--                class="intro-x login__input input input&#45;&#45;lg border border-gray-300 block mt-4"-->
+              <!--                placeholder="Last Name"-->
+              <!--              />-->
               <input
                 type="text"
                 class="intro-x login__input input input--lg border border-gray-300 block mt-4"
