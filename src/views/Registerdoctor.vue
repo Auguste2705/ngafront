@@ -7,9 +7,7 @@
         <div class="">
           <div class="intro-y box">
             <div class="p-5 border-b border-gray-200 dark:border-dark-5">
-              <h2
-                class="font-serif font-semibold lg:text-5xl sm:text-3xl font-bold text-blue-700 text-center"
-              >
+              <h2 class="font-medium text-lg text-center">
                 Formulaire d'enrégistrement du médécin
               </h2>
               <div
