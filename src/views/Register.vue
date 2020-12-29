@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!--    <DarkModeSwitcher />-->
+    <DarkModeSwitcher />
     <div class="container sm:px-10">
       <div class="block xl:grid grid-cols-2 gap-4">
         <!-- BEGIN: Register Info -->
@@ -201,11 +201,15 @@
 </template>
 
 <script>
+import DarkModeSwitcher from "@/components/DarkModeSwitcher";
 import { validationMixin } from "vuelidate";
 import { required, minLength, maxLength } from "vuelidate/lib/validators";
 import axios from "axios";
 
 export default {
+  components: {
+    DarkModeSwitcher
+  },
   mixins: [validationMixin],
   data() {
     return {
