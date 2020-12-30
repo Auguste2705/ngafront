@@ -1,7 +1,6 @@
 <template>
   <form novalidate @submit.prevent="register">
     <div>
-      <DarkModeSwitcher />
       <div class="container sm:px-10">
         <div class="block xl:grid grid-cols-2 gap-4">
           <!-- BEGIN: Register Info -->
@@ -112,6 +111,7 @@
               </div>
               <div class="intro-x mt-5 xl:mt-8 text-center xl:text-left">
                 <button
+                  type="submit"
                   class="button button--lg w-full xl:w-32 text-white bg-theme-1 xl:mr-3 align-top"
                 >
                   Register
@@ -132,13 +132,9 @@
 </template>
 
 <script>
-import DarkModeSwitcher from "@/components/DarkModeSwitcher";
 import axios from "axios";
 
 export default {
-  components: {
-    DarkModeSwitcher
-  },
   data: function() {
     return {
       form: {
